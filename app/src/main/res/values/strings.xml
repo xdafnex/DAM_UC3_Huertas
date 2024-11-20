@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DAM_UC3_Huertas</string>
+    <string name="btnvuelos">Vuelos</string>
+    <string name="btnpaquetes">Paquetes</string>
+    <string name="btnhoteles">Hoteles</string>
+    <string name="btnautos" />
+    <string name="Btnautos">Autos</string>
+    <string name="btnseguros">Seguros</string>
+    <string name="checkboxpromos">Usar puntos Latam Pass</string>
+    <string name="btnenviar">Enviar Datos</string>
 </resources>
