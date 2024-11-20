@@ -7,65 +7,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textComprar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comprar"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="31dp" />
-
     <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="412dp"
+        android:layout_height="76dp"
+        android:background="@drawable/cielo_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textComprar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Comprar"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+    </LinearLayout>
+
+
+
+<LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="381dp"
         android:layout_height="53dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textComprar">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:text="@string/btnvuelos"
-            android:backgroundTint="#FFFFFF"
-            android:textColor="#807E7E"
-            android:textSize="7sp"
-            app:strokeColor="#6A6868"
-            app:strokeWidth="1dp" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/baseline_flight_24"
+        android:text="@string/btnvuelos"
+        android:textColor="#807E7E"
+        android:textSize="7sp"
+        app:strokeColor="#6A6868"
+        app:strokeWidth="1dp" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:text="@string/btnpaquetes"
-            android:backgroundTint="#FFFFFF"
-            android:textColor="#807E7E"
-            android:textSize="7sp"
-            app:strokeColor="#6A6868"
-            app:strokeWidth="1dp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/baseline_free_breakfast_24"
+        android:text="@string/btnpaquetes"
+        android:textColor="#807E7E"
+        android:textSize="7sp"
+        app:strokeColor="#6A6868"
+        app:strokeWidth="1dp" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:text="@string/btnhoteles"
-            android:backgroundTint="#FFFFFF"
-            android:textColor="#807E7E"
-            android:textSize="7sp"
-            app:strokeColor="#6A6868"
-            app:strokeWidth="1dp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/baseline_local_hotel_24"
+        android:text="@string/btnhoteles"
+        android:textColor="#807E7E"
+        android:textSize="7sp"
+        app:strokeColor="#6A6868"
+        app:strokeWidth="1dp" />
 
 
     </LinearLayout>
@@ -76,9 +94,8 @@
         android:layout_height="468dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="129dp">
 
         <!-- Selector de ida y vuelta -->
         <LinearLayout
@@ -207,9 +224,10 @@
     <LinearLayout
         android:layout_width="350dp"
         android:layout_height="61dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
